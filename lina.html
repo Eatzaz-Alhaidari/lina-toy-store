@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>متجر ألعاب لينا</title>
+  <style>
+    body {
+      font-family: 'Tahoma', sans-serif;
+      background: linear-gradient(to bottom right, #fff2f5, #f0faff);
+      margin: 0;
+      padding: 20px;
+      direction: rtl;
+    }
+
+    h1 {
+      text-align: center;
+      color: #ff4081;
+      font-size: 32px;
+      margin-bottom: 20px;
+      text-shadow: 1px 1px 2px #ffc1e3;
+    }
+
+    .logo {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .logo img {
+      max-width: 120px;
+      height: auto;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .product {
+      border: 2px solid #ffe4ec;
+      border-radius: 15px;
+      padding: 15px;
+      text-align: center;
+      background-color: #ffffff;
+      box-shadow: 0 4px 8px rgba(255, 105, 180, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .product:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 15px rgba(255, 105, 180, 0.2);
+    }
+
+    .product img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ffdde8;
+    }
+
+    .product-name {
+      font-size: 20px;
+      margin: 10px 0;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .product-price {
+      color: #ff4081;
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      margin-top: 50px;
+      text-align: center;
+      color: #888;
+      font-size: 14px;
+    }
+
+    /* زر الواتساب */
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      border: none;
+      border-radius: 50px;
+      padding: 12px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      z-index: 1000;
+      transition: background-color 0.3s ease;
+    }
+
+    .whatsapp-button:hover {
+      background-color: #1ebe5d;
+    }
+
+    .whatsapp-button img {
+      width: 24px;
+      height: 24px;
+      margin-left: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- شعار المتجر -->
+  <div class="logo">
+    <img src="images/logo.jpg.jpg" alt="شعار متجر ألعاب لينا">
+  </div>
+
+  <h1>متجر ألعاب لينا</h1>
+
+  <div class="product-grid">
+    <div class="product">
+      <img src="images/toy1.jpg.jpg" alt="لعبة 1">
+      <div class="product-name">لعبة بازل للأطفال</div>
+      <div class="product-price">20 ريال</div>
+    </div>
+
+    <div class="product">
+      <img src="images/toy2.jpg.jpg" alt="لعبة 2">
+      <div class="product-name">دمية محشوة</div>
+      <div class="product-price">35 ريال</div>
+    </div>
+
+    <div class="product">
+      <img src="images/toy3.jpg.jpg" alt="لعبة 3">
+      <div class="product-name">مجموعة ألوان خشبية</div>
+      <div class="product-price">50 ريال</div>
+    </div>
+  </div>
+
+  <!-- زر تواصل معنا على الواتساب -->
+  <a class="whatsapp-button" href="https://wa.me/966559310477" target="_blank">
+    <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="واتساب">
+    تواصل معنا
+  </a>
+
+  <footer>
+    جميع الحقوق محفوظة © متجر ألعاب لينا 2025
+  </footer>
+
+</body>
+</html>
